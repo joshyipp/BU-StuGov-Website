@@ -1,2 +1,1 @@
-# BUPG-Website
-website repository
+# BUPGs
