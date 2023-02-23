@@ -15,28 +15,6 @@ html {
   background-size: cover;
 }
 
-#instafeed {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0.5rem;
-  grid-row-gap: 0.5rem;
-  max-width: 64rem;
-  margin: auto;
-  /*Hover over image code*/
-  visibility: hidden;
-  -webkit-transition: visibility 0s, opacity 0.5s linear; 
-  transition: visibility 0s, opacity 0.5s linear;
-}
-
-#instafeed a {
-  display: block;
-}
-
-#instafeed img {
-  display: block;
-  width: 100%;
-}
 
 body {
   font-family: 'Poppins', 'Manrope', sans-serif;
@@ -230,6 +208,8 @@ button:hover {
     -webkit-filter: saturate(250%) brightness(120%);
             filter: saturate(250%) brightness(120%);
   }
+
+ 
   #splash .expo h2 {
     font-size: 28px;
     font-weight: 400;
@@ -372,8 +352,15 @@ button:hover {
     margin: auto;
     margin-bottom: 50px;
   }
-  .about h3 span {
+
+
+  .about span h1 {
     color: white;
+    background: -webkit-gradient(linear, left top, right bottom, from(#ffda54), to(#00ffff));
+    background: linear-gradient(to bottom right, #ffda54, #00ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #overlay {
     position: fixed;
@@ -896,4 +883,27 @@ button:hover {
             transform: none;
   }
 }
+
+#instafeed {
+  /*Hover over image code*/
+visibility: hidden;
+-webkit-transition: visibility 0s, opacity 0.5s linear; 
+transition: visibility 0s, opacity 0.5s linear;
+}
+
+#instafeed-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0.5rem;
+grid-row-gap: 0.5rem;
+max-width: 64rem;
+margin: auto;
+}
+
+#instafeed-container img {
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+  }
 /*# sourceMappingURL=style.css.map */
