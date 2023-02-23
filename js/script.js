@@ -114,7 +114,7 @@ for (let i = 0; i < Class('navbtn').length; i++){
                 get: 'user',
                 target: "instafeed-container",
                 resolution: 'low_resolution',
-                template:	'<div class="content_img"><div ><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}" /></a><p>{{caption}}</p> </div></div>'
+                template:	'<div class="flex events"><div ><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}" /></a><p>{{caption}}</p> </div></div>'
                 /*'<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'*/,
                 accessToken: 'IGQVJWci1McEdaTEMtWjlib0xQTW02YUtXSFlPM0RrQWZASS3RYRnVISlFZAcFZAXWGdydnhlanplM2EtMmxhckNxVW5KREkwZATBDLWJleDZAKUy1MamhfM1o0RFF3X183dFItMjc0ME4zNEU3SjZAoV0x5ZAAZDZD',
             });
